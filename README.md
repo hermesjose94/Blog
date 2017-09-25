@@ -1,2 +1,2 @@
 # blog
-sistemas de tours
+blog desarrollado en laravel
