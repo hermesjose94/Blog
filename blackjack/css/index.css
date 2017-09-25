@@ -1,0 +1,172 @@
+/*
+display: flex; /* or inline-flex
+flex-direction: row | row-reverse | column | column-reverse;
+justify-content: flex-start | flex-end | center | space-between | space-around;
+align-items: flex-start | flex-end | center | baseline | stretch;
+*/
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url("../img/i.jpg");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header {
+  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  position: relative;
+  animation-duration: 2s;
+}
+header h1:first-child {
+  animation-name: h1;
+}
+header h1:last-child {
+  animation-name: h2;
+}
+header img {
+  height: 100px;
+  animation-name: img;
+  animation-duration: 2s;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section button {
+  background-color: #9b9f9b;
+  border-radius: 30px;
+  font-size: 1.5em;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+section button:hover {
+  background: #5cb85c;
+  color: #fff;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 150px;
+}
+div a {
+  text-decoration: none;
+  color: #f5f5dc;
+}
+div a #conf {
+  margin-right: 10px;
+  font-size: 30px;
+}
+div a:hover {
+  text-decoration: none;
+}
+@-moz-keyframes h1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-webkit-keyframes h1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-o-keyframes h1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes h1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-moz-keyframes h2 {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-webkit-keyframes h2 {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-o-keyframes h2 {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes h2 {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-moz-keyframes img {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-webkit-keyframes img {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-o-keyframes img {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes img {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}

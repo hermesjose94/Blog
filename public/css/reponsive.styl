@@ -1,0 +1,210 @@
+/*
+flex-direction: row | column |  row-reverse | column-reverse
+flex-wrap: no-wrap | wrap | wrap-reverse para que se adapten al tamaño o no
+flex-flow: row wrap -> recive el felx-direction y wrap
+justify-content: flex-start | flex-end | center | space-around | space-between
+align-items: flex-start | flex-end | center | stretch | baseline
+align-content: flex-start | flex-end | center | stretch | space-around | space-between
+para elementos
+flex-grow:  1
+flex-shrink: 1
+order: 1 cualquier numero
+*/
+
+@font-face {
+  font-family: 'iconos';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+gris = #9999aa
+gris_oscuro = #444449
+primary_color =#ff6600
+primary_color_hover =rgba(255, 102, 0, 0.5)
+
+
+/*======================Reponsive Tablet Horizontal=============================*/
+@media screen and (max-width: 1024px)
+  body
+    header
+      .cont_header
+        flex-direction column
+        justify-content center
+        align-items center
+        nav
+          width 100%
+          text-align center
+          padding 10px 0
+          ul
+            li
+              a
+                border-right 1px solid gris
+          .sub-menu
+            li
+              a
+                border-right none
+    .main
+      .articles_list
+        justify-content center
+    .content_page .information .cont_email .input .col-3
+      width 100%
+
+@media screen and (max-width: 980px)
+  .articles_list#doble
+    flex-direction center
+    .post
+      width 100%
+
+@media screen and (max-width: 992px)
+  .contenedor .contenedor_tarjeta figure .trasera
+    backface-visibility visible
+    -webkit-transform perspective(600px) rotateY(0deg)
+    -ms-transform perspective(600px) rotateY(0deg)
+    -o-transform perspective(600px) rotateY(0deg)
+    transform perspective(600px) rotateY(0deg)
+  .contenedor .contenedor_tarjeta figure
+    -webkit-transform perspective(600px) rotateY(0deg)
+    -ms-transform perspective(600px) rotateY(0deg)
+    -o-transform perspective(600px) rotateY(0deg)
+    transform perspective(600px) rotateY(0deg)
+
+/*======================Reponsive Movil=============================*/
+@media screen and (max-width: 800px)
+  .content_page
+    .information
+      .cont_email
+        .text
+        .input
+          width 100%
+  #commentarios #caja_comentarios #comments-list li .comment-body
+    padding-left 20px
+  #commentarios #caja_comentarios .comments-nav-section
+    flex-direction column
+  #commentarios #caja_comentarios .comments-nav-section .alignleft
+    margin-right 0
+  #commentarios #caja_comentarios .comment-form input
+    width 96%
+  #commentarios #caja_comentarios .comment-form .form-submit .submit
+    width 100%
+  .articles_list .post .post_content
+    height 100%
+  #commentarios #caja_comentarios #comments-list li .children
+    margin-left 10px
+  #commentarios #caja_comentarios #comments-list li .children li
+    border 2px solid gris_oscuro
+  #wpadminbar
+   display none
+  .content_page .information .breadcrumb
+    display none
+  body
+    padding-top 100px
+    header
+      .cont_header> .logo
+        display none
+      .cont_header
+        nav
+          width 80%
+          height 100%
+          position fixed
+          left -100%
+          margin 0
+          overflow scroll
+          text-align left
+          background #023859
+          top 100px
+          ul
+            li
+              display block
+              border-bottom 1px solid rgba(255,255,255,0.5)
+              &:last-child > .sub-menu
+                left: 0;
+              .sub-menu
+                position relative
+                background #011826
+                border none
+                li
+                  border-bottom: 1px solid rgba(255,255,255,0.5);
+              a
+                color white
+  		.menu_bar
+        display flex
+        justify-content space-between
+        align-items center
+        flex-direction row
+        width 100%
+        position fixed
+        top 0
+        background gris
+        z-index 2000
+        .logo
+          width 90%
+          img
+            width 100px
+            height 100px
+        .bt_menu
+          padding 0 10px
+          color white
+          overflow hidden
+          font-size 25px
+          font-weight bold
+          text-decoration none
+          display flex
+          align-items center
+          flex-direction row
+          justify-content space-between
+          flex-wrap wrap
+        span
+          font-size 40px
+          color gris_oscuro
+          padding 10px
+
+  .main
+    .features
+      .features_head
+        font-size 22px
+    .servicies
+      .servicies_head
+        font-size 22px
+    .container_servicies
+      background-image url('../img/movil.jpg')
+    .articles_list
+      justify-content center
+      padding 10px
+      .post
+        width 100%
+        min-width 100%
+    .slider-wrapper.theme-live
+      display none !important
+    .content_page
+      flex-direction column
+      .information
+        width 100%
+        order 2
+      .sidebar
+        width 100%
+        margin-top 20px
+        order 1
+    .barra
+      .content
+        flex-direction column
+        justify-content center
+        align-items center
+        flex-wrap no-wrap
+        .titulo
+        .text
+          text-align center
+  footer
+    .iconos
+    .nosotros
+    .contacto
+      margin-bottom 30px
+    .footer_bottom
+      .Cont_copyrigth
+        width 100%
+        .copyrigth
+          text-align center
+      .boton
+        width 100%
+        justify-content center

@@ -1,0 +1,82 @@
+alinear(a,b,c)
+  display flex
+  flex-direction a
+  justify-content b
+  align-items c
+  
+ 
+ocultar()
+  display none  
+  
+body
+  alinear(column,flex-start,center)
+  background-image url("../img/i.jpg")
+  background-size 420px 500px
+  border 0
+  font-family Palatino Linotype
+  height 500px
+  margin 0
+  overflow hidden
+  width 420px
+
+#hmesa
+  ocultar()
+
+#login
+  ocultar()
+
+#hserver
+  alinear(column,flex-start,center)
+  width 420px
+  header
+    alinear(column,center,center)
+    color aliceblue
+    height 70px
+    margin 0
+    margin 0
+    padding 0
+    width 100%
+    
+    h1
+      margin 0
+      
+  section
+    alinear(column,space-around,center)
+    height 350px
+    width 90%  
+    
+    article  
+      alinear(row,space-around,center)
+      height 20%
+      width 100%   
+      
+      div    
+        &:first-child  
+          alinear(column,center,center)
+          background-size 100%
+          border 3px solid beige
+          border-radius 50%
+          color white
+          font-size 1.5em
+          height 60px
+          width 60px    
+        
+        &:last-child
+          alinear(column,center,center)
+          background beige
+          border-radius 30px
+          display flex
+          font-size 1.5em
+          height 80%
+          width 70%
+        
+  button
+    background-color #9B9F9B
+    border-radius 30px
+    font-size 1.5em
+    height 50px
+    width 60%
+    margin-top 10px
+    &:hover
+      background #5cb85c
+      color white

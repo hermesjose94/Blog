@@ -1,0 +1,72 @@
+/*
+display: flex; /* or inline-flex
+flex-direction: row | row-reverse | column | column-reverse;
+justify-content: flex-start | flex-end | center | space-between | space-around;
+align-items: flex-start | flex-end | center | baseline | stretch;
+*/
+
+alinear(a,b,c)
+	display flex
+	flex-direction a
+	justify-content b
+	align-items c
+
+body
+	margin 0
+	overflow-x hidden
+	background-image url("../img/bg.png")
+	color white
+	alinear(column,space-around,center)
+header
+	margin-top 20px
+	height 100px
+	alinear(row,center,center)
+	h1
+		position relative
+		animation-duration 2s
+		&:first-child
+			animation-name h1
+		&:last-child
+			animation-name h2
+	img
+		height 100px
+		animation-name img
+		animation-duration 2s
+section
+	alinear(column,center,center)
+	button
+		background-color #9B9F9B
+		border-radius 30px
+		font-size 1.5em
+		height 50px
+		width 100%
+		margin-top 30px
+		&:hover
+			background #5cb85c
+			color white
+div
+	alinear(column,flex-end,flex-end)
+	width 100%
+	height 150px;
+	a
+		text-decoration none
+		color #f5f5dc
+		#conf
+			margin-right 10px
+			font-size 30px;
+	a:hover
+		text-decoration none
+
+@keyframes h1 {
+    0%   { left:-500px;}
+    100%  { left:0px;}
+}
+@keyframes h2 {
+    0%   { left:500px;}
+    100%  { left:0px;}
+}
+
+@keyframes img {
+    0%   { height:0px;}
+    100%  { height:100px;}
+}

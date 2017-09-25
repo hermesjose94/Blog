@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cliente</title>
+	<script src="../js/client.js"></script>
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body id="cuerpo">
+	<div id="login">
+		<header><h1>Login</h1></header>
+		<ul>
+			<li>
+				<label>Nombre</label>
+				<input id="nombre" type="text" required value="Cliente" />
+			</li>
+		</ul>
+		<div id="Cbutton">
+			<button class="button" onclick="lanzar()">Automatico</button>
+			<button class="button" onclick="lanzar2()">Manual</button>		
+		</div>	
+	</div>
+	<div id="hclient">
+	   <header><h1>Cliente</h1></header>
+	   <p id="titulo">Esperando Servidores...</p>
+	   <section id="area_server">
+
+	   </section>		
+	</div>
+    <div id="hmesa">
+		<header>
+			<div class="mazo">
+				<img src="" alt="" width="60px" height="86px" >
+				<img src="" alt="" width="60px" height="86px" >
+				<img src="" alt="" width="60px" height="86px" >
+				<img src="" alt="" width="60px" height="86px" >	
+			</div>
+			<div class="cartas" id="j0">
+			</div>
+			<p>Total: <span id="j0t">0</span></p>
+		</header>
+		<section>
+
+			<article>
+				<h3 id="j1n">Deconectado</h3>
+				<div class="cartas" id="j1">
+				</div>
+				<div class="botones" id="b1">
+					<button disabled="true" onclick="clic_pedir()" id="b1pe">Pedir</button>
+					<button disabled="true" onclick="clic_pasar()" id="b1pa">Pasar</button>
+				</div>
+				<div class="puntos">
+					<p>Total: <span id="j1t">0</span></p>
+					<p>Puntos: <span id="j1p"></span></p>
+				</div>
+			</article>
+
+			<article>
+				<h3 id="j2n">Deconectado</h3>
+				<div class="cartas" id="j2">
+				</div>
+				<div class="botones" id="b2">
+					<button disabled="true" onclick="clic_pedir()" id="b2pe">Pedir</button>
+					<button disabled="true" onclick="clic_pasar()" id="b2pa">Pasar</button>
+				</div>
+				<div class="puntos">
+					<p>Total: <span id="j2t">0</span></p>
+					<p>Puntos: <span id="j2p"></span></p>
+				</div>
+			</article>
+
+			<article>
+				<h3 id="j3n">Deconectado</h3>
+				<div class="cartas" id="j3">
+				</div>
+				<div class="botones" id="b3">
+					<button disabled="true" onclick="clic_pedir()" id="b3pe">Pedir</button>
+					<button disabled="true" onclick="clic_pasar()" id="b3pa">Pasar</button>
+				</div>
+				<div class="puntos">
+					<p>Total: <span id="j3t">0</span></p>
+					<p>Puntos: <span id="j3p"></span></p>
+				</div>
+			</article>
+
+			<article>
+				<h3 id="j4n">Deconectado</h3>
+				<div class="cartas" id="j4">
+				</div>
+				<div class="botones" id="b4">
+					<button disabled="true" onclick="clic_pedir()" id="b4pe">Pedir</button>
+					<button disabled="true" onclick="clic_pasar()" id="b4pa">Pasar</button>
+				</div>
+				<div class="puntos">
+					<p>Total: <span id="j4t">0</span></p>
+					<p>Puntos: <span id="j4p"></span></p>
+				</div>
+			</article>
+
+		</section>	
+	</div>	
+	<div id="hestadisticas">
+		<header><h1>Estadisticas</h1></header>
+		<TABLE id="estadisticas">
+			<TR>
+				<TH>Información</TH> <TH>Descripcion</TH>
+			</TR>
+			</TABLE>
+		<button  class="button" onclick="volver()">Aceptar</button>
+	</div>
+</body>
+</html>

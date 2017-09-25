@@ -1,0 +1,87 @@
+alinear(a,b,c)
+  display flex
+  flex-direction a
+  justify-content b
+  align-items c
+
+header
+  width 100%
+  height 70px
+  margin 0
+  color black
+  margin 0
+  padding 0
+  alinear(column,center,center)
+
+body
+  border 0
+  margin 0
+  width 420px
+  height 500px
+  alinear(column,flex-start,center)
+  font-family Palatino Linotype
+  overflow hidden
+  background-image url("../img/bg.png")
+  background-size 420px 500px
+  color black
+//form
+  //alinear(column,flex-start,center)
+
+ul
+  width 360px
+  list-style-type: none
+  margin 0
+  padding 0
+li
+  padding 12px
+  border-bottom 1px solid #eee
+  alinear(row,space-between,center)
+
+label
+  color #f5f5dc
+  font-family sans-serif
+  font-size 16px
+  font-weight bold
+  margin-top 3px
+  padding 3px
+  width 90px
+
+input
+  height 20px
+  width 180px
+  padding 5px 8px
+
+textarea
+  padding 8px
+  width 300px
+
+input,textarea
+  border 1px solid #DDAC79
+  box-shadow 0px 0px 3px #A26A39, 0 3px 10px #824D24 inset
+  border-radius 2px
+  font-size 12px
+  padding-right 30px
+  -moz-transition padding .25s
+  -webkit-transition padding .25s
+  -o-transition padding .25s
+  transition padding .25s
+  background none
+  color #f5f5dc
+
+input:focus, textarea:focus
+  border 1px solid #555
+  box-shadow 0 0 3px #aaa
+  padding-right 45px
+
+
+.button
+  width 40%
+  height 50px
+  border-radius 30px
+  color aliceblue
+  font-size 1.2em
+  margin-top 20px
+  color #fff
+  background-color #5cb85c
+  &:hover
+    background #9B9F9B

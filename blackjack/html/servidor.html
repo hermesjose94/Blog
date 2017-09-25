@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Servidor</title>
+	<script src="../js/server.js"></script>
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body id="cuerpo">
+	<div id="login">
+		<header><h1>Login</h1></header>
+		<ul>
+			<li>
+				<label>Nombre</label>
+				<input id="nombre" type="text" required value="Server" />
+			</li>
+		</ul>
+		<div id="Cbutton">
+			<button class="button" onclick="lanzar()">Aceptar</button>	
+		</div>	
+	</div>
+    <div id="hserver">
+        <header><h1>Servidor</h1></header>
+        <section>
+            <article>
+                <div id="1">1</div>
+                <div id="1n">Disponible</div>
+            </article>
+            <article>
+                <div id="2">2</div>
+                <div id="2n">Disponible</div>
+            </article>
+            <article>
+                <div id="3">3</div>
+                <div id="3n">Disponible</div>
+            </article>
+            <article>
+                <div id="4">4</div>
+                <div id="4n">Disponible</div>
+            </article>
+        </section>
+        <button onclick="enviar_empezar()">Iniciar Partida</button>
+    </div>
+    <div id="hmesa">
+		<header>
+			<div class="mazo">
+				<img src="" alt="" width="60px" height="86px" >
+				<img src="" alt="" width="60px" height="86px" >
+				<img src="" alt="" width="60px" height="86px" >
+				<img src="" alt="" width="60px" height="86px" >	
+			</div>
+			<div class="cartas" id="j0">
+			</div>
+			<p>Total: <span id="j0t">0</span></p>
+		</header>
+		<section>
+
+			<article>
+				<h3 id="j1n">Desconectado</h3>
+				<div class="cartas" id="j1">
+				</div>
+				<div class="puntos" id="ps1">
+					<p>Total: <span id="j1t">0</span></p>
+					<p>Puntos: <span id="j1p">0</span></p>
+				</div>
+			</article>
+
+			<article>
+				<h3 id="j2n">Desconectado</h3>
+				<div class="cartas" id="j2">
+				</div>
+				<div class="puntos" id="ps2">
+					<p>Total: <span id="j2t">0</span></p>
+					<p>Puntos: <span id="j2p">0</span></p>
+				</div>
+			</article>
+
+			<article>
+				<h3 id="j3n">Desconectado</h3>
+				<div class="cartas" id="j3">
+				</div>
+				<div class="puntos" id="ps3">
+					<p>Total: <span id="j3t">0</span></p>
+					<p>Puntos: <span id="j3p">0</span></p>
+				</div>
+			</article>
+
+			<article>
+				<h3 id="j4n">Desconectado</h3>
+				<div class="cartas" id="j4">
+				</div>
+				<div class="puntos" id="ps4">
+					<p>Total: <span id="j4t">0</span></p>
+					<p>Puntos: <span id="j4p">0</span></p>
+				</div>
+			</article>
+		</section>	
+	</div>
+	<div id="hestadisticas">
+		<header><h1>Estadisticas</h1></header>
+		<TABLE id="estadisticas">
+			<TR>
+				<TH>Información</TH> <TH>Descripcion</TH>
+			</TR>
+			</TABLE>
+		<button  class="button" onclick="volver()">Aceptar</button>
+	</div>
+</body>
+</html>
