@@ -30,7 +30,7 @@ class UserController extends Controller
           'password' => 'min:4|max:120|required',
         ]);
         $user = new User($request->all());
-        $user->type =$request->type;
+        $user->type = $request->type;
         if ($user->type=="admin") {
           $user->avatar= "admin.png";
         }
